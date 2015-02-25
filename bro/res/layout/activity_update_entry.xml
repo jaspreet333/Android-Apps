@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.bro.UpdateEntryActivity" >
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date" 
+        android:textSize="20sp"
+        />
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_marginLeft="20dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            
+            android:layout_alignTop="@+id/etdate"
+            android:layout_toRightOf="@+id/etdate"
+            android:contentDescription="@string/selectdate"
+            android:cropToPadding="true"
+            
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" 
+            android:src="@drawable/calendar_icon" />
+    
+    <TextView
+      android:id="@+id/company"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/date"
+      android:text="Company Name"
+      android:textSize="20sp"
+      android:layout_marginTop="35dp"
+      />
+
+               <EditText
+                   android:id="@+id/etdesc"
+                   android:layout_width="250dp"
+                   android:layout_height="35dp"
+                   android:layout_alignBottom="@+id/desc"
+                   android:layout_toRightOf="@+id/desc"
+                   android:ems="10" >
+
+</EditText>
+
+               <EditText
+                   android:id="@+id/etquan"
+                   android:layout_width="150dp"
+                   android:layout_height="35dp"
+                   android:layout_alignBottom="@+id/quan"
+                   android:layout_marginLeft="20dp"
+                   android:layout_toRightOf="@+id/quan"
+                   android:ems="10" >
+
+</EditText>
+
+               <EditText
+                   android:id="@+id/etrate"
+                   android:layout_width="150dp"
+                   android:layout_height="35dp"
+                   android:layout_alignBottom="@+id/rate"
+                   android:layout_marginLeft="20dp"
+                   android:layout_toRightOf="@+id/rate"
+                   android:ems="10" >
+
+</EditText>
+
+    	               <EditText
+    	                   android:id="@+id/etamt"
+    	                   android:layout_width="150dp"
+    	                   android:layout_height="35dp"
+    	                   android:layout_alignBottom="@+id/amt"
+    	                   android:layout_marginLeft="20dp"
+    	                   android:layout_toRightOf="@+id/amt"
+    	                   android:ems="10" >
+
+</EditText>
+
+	<EditText
+	    android:id="@+id/etdate"
+	    android:layout_width="150dp"
+	    android:layout_height="35dp"
+	    android:layout_centerHorizontal="true"
+	    android:ems="10" >
+
+	    <requestFocus />
+	</EditText>
+
+	<Button
+	    android:id="@+id/button1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    android:text="Update" />
+
+	<EditText
+	    android:id="@+id/spinner1"
+	    android:layout_width="120dp"
+	    android:layout_height="40dp"
+	    android:layout_alignRight="@+id/etdesc"
+	    android:layout_alignTop="@+id/company"
+	    android:textSize="20sp" 
+	    
+	    />
+
+	<TextView
+	    android:id="@+id/amt"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/company"
+	    android:layout_below="@+id/etrate"
+	    android:layout_marginTop="38dp"
+	    android:text="Amount"
+	    android:textSize="20sp" />
+
+	<TextView
+	    android:id="@+id/rate"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignRight="@+id/date"
+	    android:layout_below="@+id/quan"
+	    android:layout_marginTop="48dp"
+	    android:text="Rate"
+	    android:textSize="20sp" />
+
+	<TextView
+	    android:id="@+id/desc"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/etquan"
+	    android:layout_alignLeft="@+id/company"
+	    android:layout_marginBottom="24dp"
+	    android:text="Description"
+	    android:textSize="20sp" />
+
+	<TextView
+	    android:id="@+id/quan"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/rate"
+	    android:layout_below="@+id/spinner1"
+	    android:layout_marginTop="123dp"
+	    android:text="Quantity"
+	    android:textSize="20sp" />
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">bro</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_sales">SalesActivity</string>
+    <string name="title_activity_druminentry">Druminentry</string>
+    <string name="title_activity_pay">PayActivity</string>
+    <string name="title_activity_ledger">LedgerActivity</string>
+    <string name="title_activity_drumstock">DrumstockActivity</string>
+    <string name="selectdate">select a date</string>
+    <string name="title_activity_ccom">Ccom</string>
+    <string name="createc"><html><p><b><u>Create Company</u></b></p></html></string>
+    <string name="title_activity_update_entry">UpdateEntryActivity</string>
+    <string name="title_activity_update_entry2">UpdateEntry2Activity</string>
+    <string name="title_activity_update_forwad_entry">UpdateForwadEntryActivity</string>
+
+</resources>

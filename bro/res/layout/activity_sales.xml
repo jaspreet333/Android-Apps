@@ -1,0 +1,318 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.bro.SalesActivity"
+    
+     >
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date" 
+        android:textSize="20sp"
+        />
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_marginLeft="20dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            
+            android:layout_alignTop="@+id/etdate"
+            android:layout_toRightOf="@+id/etdate"
+            android:contentDescription="@string/selectdate"
+            android:cropToPadding="true"
+            
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" 
+            android:src="@drawable/calendar_icon" />
+    
+    <TextView
+      android:id="@+id/company"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/date"
+      android:text="Company Name"
+      android:textSize="20sp"
+      android:layout_marginTop="35dp"
+      />
+	<TextView
+	    android:id="@+id/ccom"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignRight="@+id/sv"
+	    android:layout_below="@+id/spinner1"
+	    android:layout_marginTop="25dp"
+	    android:text="@string/createc"
+	    android:textSize="15sp" />
+    
+    <ScrollView 
+	    android:id="@+id/sv"
+	    android:layout_width="match_parent"
+      android:layout_height="220dp"
+     android:layout_below="@id/ccom"
+      android:layout_marginTop="15dp"
+      
+	    >
+	    <LinearLayout 
+	           android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+     
+	        >
+        <TextView
+      android:id="@+id/desc"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Description"
+      android:textSize="20sp"
+      android:layout_marginTop="15dp"
+      />
+
+               <EditText
+                   android:id="@+id/etdesc"
+                   android:layout_width="250dp"
+                   android:layout_height="wrap_content"
+                   android:layout_alignBottom="@+id/desc"
+                   android:layout_alignTop="@+id/desc"
+                   android:layout_toRightOf="@+id/desc"
+                   android:ems="10" >
+
+</EditText>
+	        
+    <TextView
+      android:id="@+id/quan"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/desc"
+      android:text="Quantity"
+      android:textSize="20sp"
+      android:layout_marginTop="15dp"
+      />
+               <EditText
+            android:id="@+id/etquan"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/quan"
+            android:layout_alignTop="@+id/quan"
+            android:layout_toRightOf="@+id/quan"
+            android:layout_marginLeft="20dp"
+            
+            android:ems="10" >
+
+</EditText>
+    
+    <TextView
+      android:id="@+id/rate"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/quan"
+      android:text="Rate"
+      android:textSize="20sp"
+      android:layout_marginTop="15dp"
+      />
+               <EditText
+            android:id="@+id/etrate"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/rate"
+            android:layout_alignTop="@+id/rate"
+            android:layout_toRightOf="@+id/rate"
+            android:layout_marginLeft="20dp"
+            android:ems="10" >
+
+</EditText>
+    
+    	<TextView
+      android:id="@+id/amt"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/rate"
+      android:text="Amount"
+      android:textSize="20sp"
+      android:layout_marginTop="15dp"
+      />
+    	               <EditText
+            android:id="@+id/etamt"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/amt"
+            android:layout_alignTop="@+id/amt"
+            android:layout_toRightOf="@+id/amt"
+            android:layout_marginLeft="20dp"
+            android:ems="10" >
+
+</EditText>
+    	
+	<TextView
+      android:id="@+id/drum"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/amt"
+      android:text="Drum Info"
+      android:textSize="20sp"
+      android:layout_marginTop="15dp"
+      />
+	<TableLayout 
+	  android:id="@+id/table"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+     android:layout_below="@id/drum" 
+      android:textSize="20sp"
+        
+            android:shrinkColumns="*"  android:stretchColumns="*" android:background="#ffffff"
+	    >
+	      <!-- Row 1 with single column -->
+                        <TableRow
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/tv100" android:text="No of 200 ltrs drum"
+                                android:layout_weight="1"  android:background="#b0b0b0"
+                                android:textColor="#000000"
+                                android:padding="18dip" android:gravity="center"/>
+                            <EditText
+                                android:id="@+id/et100" android:text="0"
+                                android:layout_weight="1"  android:background="#b0b0b0"
+                                android:textColor="#000000"
+                                android:ems="4"
+                                android:padding="18dip" android:gravity="center"/>
+                            
+                       </TableRow>
+                                               <TableRow
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/tv101" android:text="No of 50 ltrs drum"
+                                android:layout_weight="1"  android:background="#b0b0b0"
+                                android:textColor="#000000"
+                                android:padding="18dip" android:gravity="center"/>
+                            <EditText
+                                android:id="@+id/et101" android:text="0"
+                                android:layout_weight="1"  android:background="#b0b0b0"
+                                android:textColor="#000000"
+                                android:ems="4"
+                                android:padding="18dip" android:gravity="center"/>
+                            
+                       </TableRow>
+                                               <TableRow
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/tv102" android:text="No of 35 ltrs drum"
+                                android:layout_weight="1"  android:background="#b0b0b0"
+                                android:textColor="#000000"
+                                android:padding="18dip" android:gravity="center"/>
+                            <EditText
+                                android:id="@+id/et102" android:text="0"
+                                android:layout_weight="1"  android:background="#b0b0b0"
+                                android:textColor="#000000"
+                                android:ems="4"
+                                android:padding="18dip" android:gravity="center"/>
+                            
+                       </TableRow>
+                                               <TableRow
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/tv103" android:text="No of 20 ltrs drum"
+                                android:layout_weight="1 " android:background="#b0b0b0"
+                                android:textColor="#000000"
+                                android:padding="18dip" android:gravity="center"/>
+                            <EditText
+                                android:id="@+id/et103" android:text="0"
+                                android:layout_weight="1" android:background="#b0b0b0"
+                                android:textColor="#000000"
+                                android:ems="4"
+                                android:padding="18dip" android:gravity="center"/>
+                            
+                       </TableRow>
+                                               <TableRow
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/tv104" android:text="No of 10 ltrs drum"
+                                android:layout_weight="1"  android:background="#b0b0b0"
+                                android:textColor="#000000"
+                                android:padding="18dip" android:gravity="center"/>
+                            <EditText
+                                android:id="@+id/et104" android:text="0"
+                                android:layout_weight="1"  android:background="#b0b0b0"
+                                android:textColor="#000000"
+                                android:ems="4"
+                                android:padding="18dip" android:gravity="center"/>
+                            
+                       </TableRow>
+                                               <TableRow
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/tv105" android:text="No of 5 ltrs drum"
+                                android:layout_weight="1"  android:background="#b0b0b0"
+                                android:textColor="#000000"
+                                android:padding="18dip" android:gravity="center"/>
+                            <EditText
+                                android:id="@+id/et105" android:text="0"
+                                android:layout_weight="1"  android:background="#b0b0b0"
+                                android:textColor="#000000"
+                                android:ems="4"
+                                android:padding="18dip" android:gravity="center"/>
+                            
+                       </TableRow>
+	</TableLayout>
+	
+</LinearLayout>
+			
+</ScrollView>
+
+
+	<Spinner
+	    android:id="@+id/spinner1"
+	    android:layout_width="120dp"
+	    android:layout_height="30dp"
+	    android:layout_alignBottom="@+id/company"
+	    android:layout_alignRight="@+id/ccom"
+	    android:layout_below="@+id/etdate"
+	    android:textSize="20sp" />
+
+	<EditText
+	    android:id="@+id/etdate"
+	    android:layout_width="150dp"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:ems="10" >
+
+	    <requestFocus />
+	</EditText>
+
+	<Button
+	    android:id="@+id/button1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    
+	    android:layout_below="@+id/sv"
+	    
+	    android:layout_marginTop="5dp"
+	    android:text="Button" />
+
+</RelativeLayout>

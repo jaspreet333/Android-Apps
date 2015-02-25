@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.bro.PayActivity" >
+
+<TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date" 
+        android:textSize="20sp"
+        />
+
+            <EditText
+                android:id="@+id/etdate"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/date"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/date"
+                android:ems="10" >
+
+</EditText>
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_marginLeft="20dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            
+            android:layout_alignTop="@+id/etdate"
+            android:layout_toRightOf="@+id/etdate"
+            android:contentDescription="@string/selectdate"
+            android:cropToPadding="true"
+            
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" 
+            android:src="@drawable/calendar_icon" />
+
+            <EditText
+                android:id="@+id/etamt"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/amt"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/amt"
+                android:ems="10" >
+
+</EditText>
+
+            <EditText
+                android:id="@+id/etdes"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/des"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/des"
+                android:ems="10" >
+
+</EditText>
+
+            <TextView
+                android:id="@+id/company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/date"
+                android:layout_below="@+id/etdate"
+                android:layout_marginTop="40dp"
+                android:text="Company Name"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/amt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/company"
+                android:layout_below="@+id/spinner1"
+                android:layout_marginTop="40dp"
+                android:text="Amount"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/amt"
+                android:layout_centerVertical="true"
+                android:text="Description"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etdes"
+                android:layout_marginTop="50dp"
+                android:layout_toRightOf="@+id/des"
+                android:text="Button" />
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/company"
+                android:layout_alignRight="@+id/etdes"
+                android:textSize="20sp" />
+                
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bro"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:backupAgent="MyBackupAgent"
+     >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SalesActivity"
+            android:label="@string/title_activity_sales" >
+            <intent-filter>
+                <action android:name="com.example.bro.SalesActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Druminentry"
+            android:label="@string/title_activity_druminentry"
+            android:parentActivityName="android.support.v7.app.ActionBarActivity" >
+        </activity>
+        <activity
+            android:name=".DruminentryActivity"
+            android:label="@string/title_activity_druminentry"
+            android:parentActivityName="android.support.v7.app.ActionBarActivity" >
+            <intent-filter>
+                <action android:name="com.example.bro.DruminentryActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PayActivity"
+            android:label="@string/title_activity_pay" >
+            <intent-filter>
+                <action android:name="com.example.bro.PayActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LedgerActivity"
+            android:label="@string/title_activity_ledger" >
+            <intent-filter>
+                <action android:name="com.example.bro.LedgerActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DrumstockActivity"
+            android:label="@string/title_activity_drumstock" >
+            <intent-filter>
+                <action android:name="com.example.bro.DrumstockActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Ccom"
+            android:label="@string/title_activity_ccom" >
+            <intent-filter>
+                <action android:name="com.example.bro.Ccom" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UpdateEntryActivity"
+            android:label="@string/title_activity_update_entry" >
+            <intent-filter>
+                <action android:name="com.example.bro.UpdateEntryActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UpdateEntry2Activity"
+            android:label="@string/title_activity_update_entry2" >
+            <intent-filter>
+                <action android:name="com.example.bro.UpdateEntry2Activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UpdateForwadEntryActivity"
+            android:label="@string/title_activity_update_forwad_entry" >
+                <intent-filter>
+                <action android:name="com.example.bro.UpdateForwadEntryActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.google.android.backup.api_key" android:value="AEdPqrEAAAAIODIfgl4hQsT3DpOc05kGVz3w4xPHyNpmABdzOA" />
+    </application>
+
+</manifest>
